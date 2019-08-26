@@ -1,6 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, sans-serif;
-    color: #4F545F;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  color: #4f545f;
+}
+
+h1 {
+  padding: 20px;
+  margin: 0;
+  color: white;
+  background-color: #55b3c5;
+}
+
+fieldset {
+  border: 2px dashed #dddddd;
+  margin: 20px;
+  padding: 20px;
+}
+
+fieldset > span.info {
+  padding: 20px 40px;
+  display: block;
+  color: #42579c;
+  background-image: url("./img/info-icon-png-12.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-color: rgb(202, 236, 255);
+  background-size: 30px;
+  border: 1px solid #6278b0;
+}
+
+legend {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.formElement,
+select {
+  width: 250px;
+  padding: 5px 10px;
 }

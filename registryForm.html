@@ -1,49 +1,50 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <title>Registry Form</title>
-        <meta charset = "UTF-8"/>
-        
-        <link rel = "stylesheet" href = "./style.css">
-    </head>
-    <body>
-        <h1>Registry Form</h1>
-        <ul>
-            <li>Home</li>
-            <li>About the site</li>
-            <li>Registry</li>
-            <li>Contact</li>
-            <li>Copyright</li>
-        </ul>
-        <form>
-            <fieldset>
-                <legend>New account registry</legend>
-                <span>Your information is safe with us.</span> <br> <br>
-                <label for = "name">Complete Name</label> <br>
-                <input type = "text" id = "name"/> <br><br>
-                <label for = "mail">Email</label> <br>
-                <input type = "email" id = "mail"/> <br><br>
-                <label for = "pass">Password</label> <br>
-                <input type = "password" id = "pass"/> <br><br>
-                <label for = "passconf">Password confirmation</label> <br>
-                <input type = "password" id = "passconf"/> <br><br>
-                <span>Country</span> <br>
-                <select>
-                   <option value = "mex">Mexico</option>
-                   <option value = "usa">United States</option> 
-                   <option value = "canada">Canada</option>
-                </select><br><br>
-                <label for = "male">Male</label>
-                <input id = "male" type = "radio" name = "gender"/> <br>
-                <label for = "fmale">Female</label>
-                <input id = "fmale" type = "radio" name = "gender"/> <br><br>
-                <button type = "submit">
-                    Submit
-                </button>
-                <button>
-                    Cancel
-                </button>
-            </fieldset>
-        </form>
-    </body>
+<html lang="en">
+  <head>
+    <title>Registry Form</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Registry Form</h1>
+    <ul>
+      <li>Homes</li>
+      <li>About the site</li>
+      <li>Registry</li>
+      <li>Contact</li>
+      <li>Copyright</li>
+    </ul>
+    <form>
+      <fieldset>
+        <legend>New account registry</legend>
+        <span class="info">Your information is safe with us.</span> <br />
+        <br />
+        <label for="name">Complete Name</label> <br />
+        <input class="formElement" type="text" id="name" /> <br /><br />
+        <label for="mail">Email</label> <br />
+        <input class="formElement" type="email" id="mail" /> <br /><br />
+        <label for="pass">Password</label> <br />
+        <input class="formElement" type="password" id="pass" /> <br /><br />
+        <label for="passconf">Password confirmation</label> <br />
+        <input class="formElement" type="password" id="passconf" /> <br /><br />
+        <span>Country</span> <br />
+        <select>
+          <option value="mex">Mexico</option>
+          <option value="usa">United States</option>
+          <option value="canada">Canada</option> </select
+        ><br /><br />
+        <label for="male">Male</label>
+        <input class="formElement" id="male" type="radio" name="gender" /> <br />
+        <label for="fmale">Female</label>
+        <input class="formElement" id="fmale" type="radio" name="gender" /> <br /><br />
+        <button type="submit">
+          Submit
+        </button>
+        <button>
+          Cancel
+        </button>
+      </fieldset>
+    </form>
+  </body>
 </html>
