@@ -1,54 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <title>Registry Form</title>
-  <meta charset="UTF-8" />
-
-  <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  <title>
+    This is my first html page
+  </title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <h1>Registry Form</h1>
-  <ul id="menu">
-    <li>Homes</li>
-    <li>About the site</li>
-    <li>Registry</li>
-    <li>Contact</li>
-    <li>Copyright</li>
-  </ul>
-  <form>
-    <fieldset>
-      <legend>New account registry</legend>
-      <span class="info">Your information is safe with us.</span> <br />
-      <br />
-      <label for="name">Complete Name</label> <br />
-      <input class="formElement" type="text" id="name" /> <br /><br />
-      <label for="mail">Email</label> <br />
-      <input class="formElement" type="email" id="mail" /> <br /><br />
-      <label for="pass">Password</label> <br />
-      <input class="formElement" type="password" id="pass" /> <br /><br />
-      <label for="passconf">Password confirmation</label> <br />
-      <input class="formElement" type="password" id="passconf" /> <br /><br />
-      <span>Country</span> <br />
-      <select>
-        <option value="mex">Mexico</option>
-        <option value="usa">United States</option>
-        <option value="canada">Canada</option>
-      </select><br /><br />
-      <label for="male">Male</label>
-      <input class="formElement" id="male" type="radio" name="gender" /> <br />
-      <label for="fmale">Female</label>
-      <input class="formElement" id="fmale" type="radio" name="gender" /> <br /><br />
-      <button type="submit">
-        Submit
-      </button>
-      <button>
-        Cancel
-      </button>
-    </fieldset>
-  </form>
+  <header>
+    <h1>
+      Registry Form
+    </h1>
+  </header>
+  <nav>
+    <ul id="menu">
+      <li id="home">
+        Home
+      </li>
+      <li id="about">
+        About the site
+      </li>
+      <li id="registry" class="selected">
+        Registry
+      </li>
+      <li id="contact">
+        Contact
+      </li>
+      <li id="copyright">
+        Copyright
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section id="registrySection" class="currentSelected">
+      <form>
+        <fieldset>
+          <legend>
+            New Account Registry
+          </legend>
+          <span class="info">
+            Your information is safe with us
+          </span>
+          <p>
+            <label for="fullName"> Complete name </label>
+          </p>
+          <input class="formElement" id="fullName" type="text" />
+          <span class="errorMessage" id="fullNameErrorMessage"> </span>
+          <p>
+            <label for="email"> Email </label>
+          </p>
+          <input class="formElement" id="email" type="text" />
+          <span class="errorMessage" id="emailErrorMessage" hidden>Please provide your email</span>
+          <p>
+            <label for="password"> Password </label>
+          </p>
+          <input class="formElement" id="password" type="password" />
+          <span class="errorMessage" id="passwordErrorMessage"></span>
+
+          <p>
+            <label for="passwordConfirmation"> Password confirmation </label>
+          </p>
+          <input class="formElement" id="passwordConfirmation" type="password" />
+          <span class="errorMessage" id="passwordConfErrorMessage"></span>
+          <p>Country</p>
+          <select id="country">
+            <option value="0"> Select a country... </option>
+            <option value"MX"> México </option>
+            <option value="US"> USA </option>
+            <option value="FR"> France </option>
+          </select>
+          <span class="errorMessage" id="countryErrorMessage"> </span>
+          <p>
+            Gender
+            <span class="errorMessage" id="genderErrorMessage"></span>
+          </p>
+          <p>
+            <input type="radio" name="gender" id="masculine" value="M" /> <label for="masculine"> Masculine </label>
+          </p>
+          <p>
+            <input type="radio" name="gender" id="feminine" id="value=" F" /> <label for="feminine"> Feminine </label>
+          </p>
+          <input class="buttonHover" id="cancelButton" type="submit" value="Cancel" />
+          <input class="buttonHover" id="submitButton" type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <script src="./jQuery/index.js"> </script>
 </body>
-<script src="./js/index.js" type="text/js"></script>
 
 </html>
